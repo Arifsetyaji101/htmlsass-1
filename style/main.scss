@@ -1,0 +1,14 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+$navy: #05001e;
+$green1: #1fd392;
+$green2: #136849;
+$bg-gray: #eef0f7;
+$font-weigihts: ( regular: 400,
+semibold: 600,
+bold: 700,
+);
+body {
+    font-weight: map-get($font-weigihts, regular);
+    font-family: "Noto Sans", sans-serif;
+}
