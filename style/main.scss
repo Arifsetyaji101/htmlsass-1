@@ -1,14 +1,120 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 $navy: #05001e;
-$green1: #1fd392;
-$green2: #136849;
+$white: #fff;
+$text-green: #136849;
+$text-gray:#9B99A5;
+$bg-green: #1fd392;
 $bg-gray: #eef0f7;
-$font-weigihts: ( regular: 400,
-semibold: 600,
-bold: 700,
+$bg-purple: #17132F;
+$font-weigihts: (regular: 400,
+    semibold: 500,
+    midbold: 600,
+    bold: 700,
 );
+
 body {
-    font-weight: map-get($font-weigihts, regular);
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+header {
+    background-color: $navy;
+}
+
+.navbar {
+    padding-top: 34px !important;
+
+    .navbar-nav {
+        .nav-link {
+            color: $white !important;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: map-get($font-weigihts, semibold);
+            line-height: 22px;
+            margin-left: 48px;
+
+            &.active {
+                color: $bg-green !important;
+            }
+
+            &:hover {
+                color: $bg-green !important;
+            }
+        }
+    }
+
+    .btn-auth {
+        @extend .btn;
+        background-color: $bg-purple;
+        color: $white;
+        padding: 12px 36px;
+    }
+}
+
+.btn {
+    border-radius: 200px;
+}
+
+.section-header {
+    padding-top: 100px;
+
+    .news {
+        display: flex;
+        text-decoration: none;
+
+        span {
+            @extend .btn;
+            padding: 6px 16px;
+            font-size: 14px;
+
+            &:nth-child(1) {
+                z-index: 1;
+                background-color: $bg-green;
+                color: $text-green;
+                font-weight: map-get($font-weigihts, bold);
+            }
+
+            &:nth-child(2) {
+                z-index: 0;
+                background-color: $bg-purple;
+                color: $white;
+                font-weight: map-get($font-weigihts, regular);
+                position: relative;
+                left: -62px;
+                padding-left: 75px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .sales {
+        .header {
+            font-size: 55px;
+            font-weight: map-get($font-weigihts, bold);
+            line-height: 74.91px;
+            color: $white;
+        }
+
+        .description {
+            font-size: 16px;
+            font-weight: map-get($font-weigihts, regular);
+            line-height: 30px;
+            color: $text-gray;
+
+        }
+
+        .btn-getstarted {
+            @extend .btn;
+            background-color: $bg-green;
+            color: $text-green;
+            padding: 20px 44px;
+            font-size: 22px;
+            font-weight: map-get($font-weigihts, midbold);
+            line-height: 30px;
+
+        }
+    }
 }

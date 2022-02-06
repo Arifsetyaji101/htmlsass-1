@@ -1,6 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+header {
+  background-color: #05001e;
+}
+
+.navbar {
+  padding-top: 34px !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff !important;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 48px;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #1fd392 !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #1fd392 !important;
+}
+
+.navbar .btn-auth {
+  background-color: #17132F;
+  color: #fff;
+  padding: 12px 36px;
+}
+
+.btn, .navbar .btn-auth, .section-header .news span, .section-header .sales .btn-getstarted {
+  border-radius: 200px;
+}
+
+.section-header {
+  padding-top: 100px;
+}
+
+.section-header .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.section-header .news span {
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+.section-header .news span:nth-child(1) {
+  z-index: 1;
+  background-color: #1fd392;
+  color: #136849;
+  font-weight: 700;
+}
+
+.section-header .news span:nth-child(2) {
+  z-index: 0;
+  background-color: #17132F;
+  color: #fff;
   font-weight: 400;
-  font-family: "Noto Sans", sans-serif;
+  position: relative;
+  left: -62px;
+  padding-left: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section-header .sales .header {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 74.91px;
+  color: #fff;
+}
+
+.section-header .sales .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #9B99A5;
+}
+
+.section-header .sales .btn-getstarted {
+  background-color: #1fd392;
+  color: #136849;
+  padding: 20px 44px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
 }
 /*# sourceMappingURL=main.css.map */
